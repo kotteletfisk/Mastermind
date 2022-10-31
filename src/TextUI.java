@@ -13,7 +13,6 @@ public class TextUI
    public ArrayList<Integer> getUserInput()
    {
        Scanner scan = new Scanner(System.in);
-       int i = 0;
        String input = "";
        ArrayList<Integer> values = new ArrayList<>();
 
@@ -22,7 +21,7 @@ public class TextUI
        //cheatcode
        if (input.equals("print"))
        {
-           System.out.println(Game.targets);
+           System.out.println(Game.getTargets());
            input = scan.nextLine();
        }
 

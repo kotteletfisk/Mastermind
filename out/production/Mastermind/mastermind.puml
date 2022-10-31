@@ -18,8 +18,6 @@ Game : - int targetC
 Game : - int targetD
 Game : + Textui textUI
 Game : + runGame():void
-Game : + checkIfwon:boolean
-Game : + compare(Arraylist<Integer> guesses, Arraylist<Integer> targets):Arraylist<Integer
 
 TextUI : - Scanner scan
 TextUI : + displayWelcome():void
