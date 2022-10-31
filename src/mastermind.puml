@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Main
+class Game
+class TextUI
+
+Main *-- Game
+Game *-- TextUI
+
+Main : + Game game
+
+
+Game : - Random random
+Game : - int targetA
+Game : - int targetB
+Game : - int targetC
+Game : - int targetD
+Game : + Textui textUI
+Game : + runGame():void
+
+TextUI : - Scanner scan
+TextUI : + displayWelcome():void
+TextUI : + takeInput(String msg):void
+
+
+
+
+
+@enduml
